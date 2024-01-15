@@ -17,7 +17,8 @@ app.use(cors());
 mongoose.connect('mongodb+srv://root:root@cluster0.dcfek.mongodb.net/?retryWrites=true&w=majority', {
     // useNewUrlParser: true,
     // useUnifiedTopology: true,
-    dbName: 'projects_db'
+    dbName: 'cfm_db'
+    // dbName: 'projects_db'
 });
 
 app.use(express.json());
