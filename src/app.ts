@@ -9,6 +9,7 @@ import ofertaRoutes from './routes/ofertaRoutes';
 import projectRoutes from './routes/projectRoutes';
 import pagamentoRoutes from './routes/pagamentoRoutes';
 import cfmRoutes from './routes/cfmRoutes';
+import benfeitorRoutes from './routes/benfeitorRoutes';
 
 const app = express();
 // Ativando o CORS para todas as rotas
@@ -29,5 +30,6 @@ app.use(ofertaRoutes);
 app.use(projectRoutes);
 app.use(pagamentoRoutes);
 app.use(cfmRoutes);
+app.use(benfeitorRoutes);
 
 export default app;
