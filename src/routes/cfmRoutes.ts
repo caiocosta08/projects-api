@@ -19,7 +19,7 @@ router.post('/cfm', async (req, res) => {
 // GET: Lista todos os usuários
 router.get('/cfm', async (req, res) => {
     try {
-        const cfm = await Cfm.find({ event: 'Livres de Toda Maldição'});
+        const cfm = await Cfm.find();
         res.status(200).send(cfm);
     } catch (error: any) {
         res.status(500).send(error.message);
