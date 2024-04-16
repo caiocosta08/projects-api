@@ -10,10 +10,10 @@ export interface ICfm extends Document {
 }
 
 const cfmSchema: Schema = new Schema({
-    name: { type: String, required: true, unique: true },
-    email: { type: String, required: true, unique: true },
-    phone: { type: String, required: true, unique: true },
-    is_paid: { type: Boolean, default: false},
+    name: { type: String, required: true },
+    email: { type: String, required: true },
+    phone: { type: String, required: true },
+    is_paid: { type: Boolean, default: false },
     event: { type: String, default: '' },
     date: { type: String, default: new Date() },
 });
